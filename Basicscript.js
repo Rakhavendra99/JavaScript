@@ -1,17 +1,17 @@
 //variable                      Time(20.40)
 var firstName = "Rakhavendra";
-var lastName = 'S M';
+var lastName = "S M";
 var age;
-age = 10
-console.log(age)
+age = 10;
+console.log(age);
 console.log(firstName);
 firstName = "pravin";
 console.log(firstName);
 
 //Data type                     Time(26.30)
-var str = "Rakhavendra is a Good boy"
+var str = "Rakhavendra is a Good boy";
 console.log(str);
-str = 'Pravin is a Good boy'
+str = "Pravin is a Good boy";
 console.log(str);
 str = "Both 'Rakhavendra' and 'Pravin' is Good boy";
 console.log(str);
@@ -21,7 +21,7 @@ var num = 27.2423;
 console.log(num);
 num1 = 3;
 num2 = 9;
-console.log(a)
+console.log(a);
 a = null;
 console.log(a);
 
@@ -39,8 +39,8 @@ console.log(a);
 a = 4;
 b = 4;
 console.log(a == b);
-b = '4';
-console.log(a == b);  // it some error a is int b is string
+b = "4";
+console.log(a == b); // it some error a is int b is string
 console.log(a === b); //perfectly working a is int b is string
 console.log(a != b);
 console.log(a !== b);
@@ -48,63 +48,62 @@ console.log(a !== b);
 //Type Coercion                 Time(42.05)
 a = 10 + 5;
 console.log(a);
-a = 10 + '5';
+a = 10 + "5";
 console.log(a);
-a = 10 * '5'
+a = 10 * "5";
 console.log(a);
-str = 'Hello ' + 'Welcome ' + 'To All'
+str = "Hello " + "Welcome " + "To All";
 console.log(str);
-a = 5 + 2 + 'b';
-console.log(a)
-a = 'b' + 5 + 2;
+a = 5 + 2 + "b";
+console.log(a);
+a = "b" + 5 + 2;
 console.log(a);
 console.log(5 === 5);
-console.log(5 === 5 === 5);
+console.log((5 === 5) === 5);
 console.log(true === 5);
-console.log(true == 1)
-console.log(true === 1)
-console.log(false == 0)
+console.log(true == 1);
+console.log(true === 1);
+console.log(false == 0);
 console.log(false === 0);
 
 //Conditional Statement             Time(49.00)
 age = 11;
 if (age >= 10) {
-    console.log(firstName);
+  console.log(firstName);
 } else if (age <= 10) {
-    console.log(lastName);
+  console.log(lastName);
 }
 
 //If... Else If...                 Time(53.35)
-var prof = 'doctor';
-if (prof === 'instructor'){
-    console.log(prof + ' teacher students');
-}else if(prof === 'doctor'){
-    console.log(prof + ' treats people');
-}else if(prof === 'doctor'){
-    console.log(prof + ' creates the Music');
-}else{
-    console.log("prof is not match");
+var prof = "doctor";
+if (prof === "instructor") {
+  console.log(prof + " teacher students");
+} else if (prof === "doctor") {
+  console.log(prof + " treats people");
+} else if (prof === "doctor") {
+  console.log(prof + " creates the Music");
+} else {
+  console.log("prof is not match");
 }
 
 //logical operator                  Time(57.20)
-if( 5 === 3 && 4 === 4 ){
-    console.log('condition is true');
-}else{
-    console.log('condition is false');
+if (5 === 3 && 4 === 4) {
+  console.log("condition is true");
+} else {
+  console.log("condition is false");
 }
 
-if( 5 === 3 || 4 === 4 ){
-    console.log('condition is true');
-}else{
-    console.log('condition is false');
+if (5 === 3 || 4 === 4) {
+  console.log("condition is true");
+} else {
+  console.log("condition is false");
 }
 
-if( !true ){
-    console.log('condition is true');
-}else{
-    console.log('condition is false');
+if (!true) {
+  console.log("condition is true");
+} else {
+  console.log("condition is false");
 }
-  
 
 /* 
 ***********************************Coding task No 1*************************************
@@ -120,23 +119,22 @@ if( !true ){
 
 // SOLUTION:
 
-var John =76;
+var John = 76;
 var Nick = 45;
 var pass = 51;
-if(John >= pass && Nick >= pass){
-    console.log('Both student passed');
-    console.log('John '+John+' points and '+Nick+' points')
-}else if(John >=pass || Nick >= pass ){
-    console.log('One of the student passed');
-    if(John > Nick){
-        console.log('John is passed and '+John+' points');
-        console.log('Nick is fail '+Nick+' points')
-    }else{
-        console.log('Nick is passed and '+Nick+' points');
-        console.log('John is fail '+John+' points')
-    }
-    
-}else {
-    console.log('Both of the student failed')
-    console.log('John '+John+' points and '+Nick+' points')
+if (John >= pass && Nick >= pass) {
+  console.log("Both student passed");
+  console.log("John " + John + " points and " + Nick + " points");
+} else if (John >= pass || Nick >= pass) {
+  console.log("One of the student passed");
+  if (John > Nick) {
+    console.log("John is passed and " + John + " points");
+    console.log("Nick is fail " + Nick + " points");
+  } else {
+    console.log("Nick is passed and " + Nick + " points");
+    console.log("John is fail " + John + " points");
+  }
+} else {
+  console.log("Both of the student failed");
+  console.log("John " + John + " points and " + Nick + " points");
 }
