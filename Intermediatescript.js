@@ -128,5 +128,3 @@ console.log(school.class.bed);
 school.place();
 school.myfunc(school.name,school.city,school.color,school.class.Numberofclass);
 school.myfunc1( {name:"KCM",city:"NLK",color:"white",Numberofclass:30} );
-
-//Loops                                             Time(1.52.05) 
